@@ -1,5 +1,5 @@
 # ChicagoCrimes
-# README
+## README
 
 ## Group Information
 - **Group Number:** 1
@@ -20,7 +20,7 @@
 
 ## Project Overview
 
-This project aims to analyze a sample of crime data from Chicago to uncover patterns and trends using Big Data tools. It demonstrates the use of advanced technologies like Apache Spark and Apache Sedona for data processing and geospatial analysis.
+This project analyzes a sample of crime data from Chicago to uncover patterns and trends using **Big Data Tools**. It demonstrates the use of technologies like **Apache Spark** and **Apache Sedona** for data processing and geospatial analysis, ensuring scalability and efficiency.
 
 ---
 
@@ -28,20 +28,55 @@ This project aims to analyze a sample of crime data from Chicago to uncover patt
 
 ### Task 1: Data Cleaning and Enrichment
 - **Details:**
-  - Loading raw CSV data.
-  - Adding geospatial attributes (e.g., ZIP codes) to crime records using Apache Sedona.
-  - Saving enriched data in Parquet format for efficient storage and querying.
+  - Loaded raw CSV crime data into a Spark DataFrame.
+  - Renamed columns for better compatibility.
+  - Added geospatial attributes (e.g., ZIP codes) to crime records using Apache Sedona's spatial join capabilities.
+  - Saved enriched data as a **Parquet** file for efficient querying and storage.
+
+---
 
 ### Task 2: Spatial Analysis
 - **Details:**
-  - Aggregating crime data by ZIP code.
-  - Joining crime counts with geospatial data (ZIP code geometries).
-  - Visualizing crime distribution by ZIP code using a choropleth map.
+  - Aggregated crime data by ZIP code using Spark SQL.
+  - Joined crime counts with geospatial data (ZIP code geometries).
+  - Exported the resulting dataset in **GeoJSON format** for compatibility with geospatial visualization tools like QGIS.
+  - Generated a **choropleth map** using GeoPandas and Matplotlib to visualize crime distribution.
+
+---
 
 ### Task 3: Temporal Analysis
 - **Details:**
-  - Filtering crimes by date
-  - Analyzing crime trends by type and creating a bar chart.
+  - Filtered crimes by date range using command-line arguments for flexibility.
+  - Grouped crimes by type and analyzed trends using Spark SQL.
+  - Saved the temporal analysis results as a **CSV** file.
+  - Generated a **bar chart** using Matplotlib to illustrate crime trends by type.
+
+---
+
+## Tools and Technologies Used
+
+1. **Big Data Tools:**
+   - Apache Spark for large-scale data processing and SQL querying.
+   - Apache Sedona for geospatial operations like spatial joins and geometry handling.
+
+2. **Visualization Tools:**
+   - **GeoPandas** and **Matplotlib** for automated generation of bar charts and choropleth maps.
+   - Outputs are compatible with external tools like **QGIS** for advanced geospatial visualization.
+
+---
+
+## Output and Visualizations
+
+1. **Task 1 Output:**
+   - Enriched crime data saved as a **Parquet file** for efficient querying.
+
+2. **Task 2 Output:**
+   - Aggregated data by ZIP code saved as a **GeoJSON file**.
+   - **Choropleth Map**: Visualizes crime count distribution by ZIP code.
+
+3. **Task 3 Output:**
+   - Temporal analysis results saved as a **CSV file**.
+   - **Bar Chart**: Visualizes the number of crimes by type for the selected date range.
 
 ---
 
@@ -50,8 +85,10 @@ This project aims to analyze a sample of crime data from Chicago to uncover patt
 - [Project Repository](https://github.com/abdelrahman-ammar1/ChicagoCrimes/tree/main)
 
 This repository contains:
-- One python file (ChicagoCrimesAnalysis.py).
-- Folder containing dataset samples.
-- Output files (Parquet, GeoJSON) and Visualizations.
-- The final report detailing the methodology and results.
-- The presentation going through the code.
+- **ChicagoCrimesAnalysis.py**: The updated Python script for the analysis pipeline.
+- **Dataset Samples**: Example datasets used for analysis.
+- **Output Files**:
+  - **Parquet** and **GeoJSON** files for data storage.
+  - Visualization files (choropleth maps and bar charts) in PNG format.
+- **Documentation**: Final report and detailed methodology.
+- **Presentation**: An overview of the code and project results.
