@@ -51,6 +51,7 @@ This project aims to analyze a sample of crime data from Chicago to uncover patt
 
 This repository contains:
 - One python file (ChicagoCrimesAnalysis.py).
+- Folder containing dataset samples.
 - Output files (Parquet, GeoJSON) and Visualizations.
 - The final report detailing the methodology and results.
-- The presentation going through the code
+- The presentation going through the code.
