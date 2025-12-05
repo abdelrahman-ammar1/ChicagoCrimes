@@ -1,20 +1,7 @@
 # ChicagoCrimes
 ## README
 
-## Group Information
-- **Group Number:** 1
 - **Project Title:** Analyzing and Visualizing Chicago Crime Data Using Big Data Tools
-
----
-
-## Students Information
-
-| Name                   | Task Contribution                        | GitHub Profile |
-|------------------------|------------------------------------------|----------------|
-| **Omar Ackef**         | - Data Cleaning and Enrichment (Task 1)  |
-| **Abdelrahman Ammar**  | - Spatial Analysis (Task 2)              |
-| **Omar Ackef**         | - Temporal Analysis (Task 3)             |
-| **Abdelrahman Ammar**  | - Report Writing and Documentation       | [GitHub](https://github.com/abdelrahman-ammar1/ChicagoCrimes/tree/main) |
 
 ---
 
