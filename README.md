@@ -1,7 +1,7 @@
 # ChicagoCrimes
 ## README
 
-**Project Title:** Analyzing and Visualizing Chicago Crime Data Using Big Data Tools
+## **Project Title:** Analyzing and Visualizing Chicago Crime Data Using Big Data Tools
 
 ---
 
